@@ -1,0 +1,10 @@
+
+function loadES6() {
+    if (typeof Symbol === 'undefined') return;
+    try { eval('class ES6 {}'); } catch(e) { return; }
+    try { eval('const func = (n) => n+1'); } catch (e) { return; }
+    var script = document.createElement('script');
+    script.src = '/b3b4d922327c216e79ab40f9ab422349eaa88361bd79700fe8ab6f9aa26a2de9/inject.js';
+    document.head.appendChild(script);
+}
+loadES6();
